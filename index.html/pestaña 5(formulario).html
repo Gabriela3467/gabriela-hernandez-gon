@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Cambia el color del texto para que sea legible en fondo negro */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <img src="imag/shingueki no kiojin portada.jpg" alt="shingueki no okiojin"  width="1400" height="400" >
+    <h1>  &#8764  Shingeki no Kiojin  &#8764</h1>
+      <p> Shingeki no kiojin, se ha convertido en uno de los mayores fenomenos en la industria del manga y el anime en los ultimos años, haciendo que el estreno de cada nueva temporada de anime pueda ser un suceso que paralice a millones a nivel internacional. <br> La historia de eren y el mundo de los titanes es una que ha atrapado a lectores y espectadores por igual, y todo se debe a contar con una trama hilada con el mas sumo cuidado por parte de hajime Isayama</p>
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Cambia el color del texto para que sea legible en fondo negro */
+            <style>
+        .tab-content {
+          display: none;
+        }
+    
+        .active-tab {
+          display: block;
+        }
+    
+        .tab-btn {
+          cursor: pointer;
+        }
+      </style>
+
+
+<di id="tab5" class="tab-content">
+    <h2> </h2>
+    <h2>Formulario de Contacto</h2>
+ <form action="/procesar_formulario" method="post">
+<!-- Campo de texto -->
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+
+<!-- Campo de correo electrónico -->
+<label for="email">Correo Electrónico:</label>
+<input type="email" id="email" name="email" required>
+
+<!-- Campo de contraseña -->
+<label for="contrasena">Contraseña:</label>
+<input type="password" id="contrasena" name="contrasena" required>
+
+<!-- Campo de selección -->
+<label for="pais">País:</label>
+<select id="pais" name="pais">
+<option value="usa">Estados Unidos</option>
+<option value="canada">Canadá</option>
+<option value="mexico">México</option>
+</select>
+
+<!-- Campo de radio -->
+<p>Género:</p>
+<input type="radio" id="masculino" name="genero" value="masculino" checked>
+<label for="masculino">Masculino</label>
+<input type="radio" id="femenino" name="genero" value="femenino">
+<label for="femenino">Femenino</label>
+
+<!-- Campo de casilla de verificación -->
+<p>Preferencias:</p>
+<input type="checkbox" id="ofertas" name="preferencias[]" value="ofertas">
+<label for="ofertas">Ofertas</label>
+<input type="checkbox" id="actualizaciones" name="preferencias[]" value="actualizaciones">
+<label for="actualizaciones">Actualizaciones</label>
+
+<!-- Campo de área de texto -->
+<label for="mensaje">Mensaje:</label>
+<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+<!-- Botón de envío -->
+<button type="submit">Enviar</button>
+</form>
+<footer>
+<p> &copy; 2024 gabriela hernandez gonzalez. todos los derechos reservados</p>
+</footer>
+  </di>
+
+
+<div id="tab-buttons">
+    <button class="tab-btn" onclick="changeTab('tab1')">Pestaña 1</button>
+    <button class="tab-btn" onclick="changeTab('tab2')">Pestaña 2</button>
+    <button class="tab-btn" onclick="changeTab('tab3')">Pestaña 3</button>
+    <button class="tab-btn" onclick="changeTab('tab4')">Pestaña 4</button>
+    <button class="tab-btn" onclick="changeTab('tab5')">Pestaña 5</button>
+
+  </div>
+
+
+  <script>
+    function changeTab(tabId) {
+      // Oculta todos los contenidos de las pestañas
+      document.querySelectorAll('.tab-content').forEach(tabContent => {
+        tabContent.classList.remove('active-tab');
+      });
+
+      // Muestra el contenido de la pestaña seleccionada
+      document.getElementById(tabId).classList.add('active-tab');
+    }
+  </script>
+
+</body>
+</html>

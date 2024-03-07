@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: white; /* Cambia el color del texto para que sea legible en fondo negro */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .tab-content {
+          display: none;
+        }
+    
+        .active-tab {
+          display: block;
+        }
+    
+        .tab-btn {
+          cursor: pointer;
+        }
+      </style>
+     
+     <div id="tab1" class="tab-content active-tab">
+        <h2>inicio</h2>
+       <h3>Trama</h3>
+       <p>Desde que 100 años atras los titanes apareciesen de la nada y llevasen a la humanidad al borde de la extincion, la poblacion vive encerrada en ciudades rodeadas de enormes muros llamados Maria,Rose y Sina, con el fin de protegerse de la aparicion de nuevos titanes.<br> Ese es el dia a dia de Eren Jeager, un joven que sueña con el poder estar fuera de los muros, fastidiado por el conformismo con el que la huminidad vive encerrada como si fuese ganado <br> La repentina llegada del tital colosal y acorazado aplastara la ilucion de paz en la que hasta ahora vivia la sociedad humana y hara que eren, junto a su hermana adoptiva Mikasa Ackerman y su mejor amigo Armin Arlet, se embarquen en una arriesgada odisea de venganza en nombre de la humanidad</p>
+     
+       <div id="tab4" class="tab-content"> 
+        <h2> ¿Shingueki no kiojin concluciones?</h2>
+        
+        <p> Es un buen anime, aunque no se recomienda para niños, por lo explicito que es, en el puedes encontar varia referencias al holocausto, la mitologia escandinavia y su hogar, hasta cierto punto se  reflejo el mismo en el protagonista. <br>
+        muchos consideran shingueki no kiojin como una joya de la animacion, por los sountracs, canciones y el detalle a las cosas que sirvieron para el fututo de la historia, el anime inicio como personas que se enfrentas a titanes por su propia sobrevivencia ah pelear ellos contra el mundo para ser libres, que elago que remarca bien, ¿que es la libertad? te lo pone en duda, que estas dispuesto ah hacer solo por ser libre, el anime lo remarco como un incio como por saber que hay mas alla de las murallas, para depues convertirlo en algo mas grande.
+    algo que tambien toca es el sacrificio, dejar de lado tus sueños para ayudar a otros, echo que se remarca en erwin smith, y Eren Jeager, ambos dejaron sus sueños para ayudar a sus amigos y pueblo.( no te encariñes con ningun personaje) <br>
+El final dejo mucho que dear a los fans, por el echo de que fue predecible, ya que muchos siguieron esta serie por años, impactandose por cada revelacion esperando un final impactante, aparte de que la temporada final estuvo dividida en muchas partes,dejando todo cerrado, un final cronguente no dejaron ningun misterio abierto,pero dejo en claro algo la guerra nunca termina sin importar lo que pase.</p>
+<footer>
+    <p> &copy; 2024 gabriela hernandez gonzalez. todos los derechos reservados</p>
+  </footer>
+</div>
+
+<div id="tab-buttons">
+    <button class="tab-btn" onclick="changeTab('tab1')">Pestaña 1</button>
+    <button class="tab-btn" onclick="changeTab('tab2')">Pestaña 2</button>
+    <button class="tab-btn" onclick="changeTab('tab3')">Pestaña 3</button>
+    <button class="tab-btn" onclick="changeTab('tab4')">Pestaña 4</button>
+</div>
+
+    
+<script>
+  function changeTab(tabId) {
+    // Oculta todos los contenidos de las pestañas
+    document.querySelectorAll('.tab-content').forEach(tabContent => {
+      tabContent.classList.remove('active-tab');
+    });
+
+    // Muestra el contenido de la pestaña seleccionada
+    document.getElementById(tabId).classList.add('active-tab');
+  }
+</script>
+
+</body>
+</html>
